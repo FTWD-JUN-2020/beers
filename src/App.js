@@ -1,30 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import axios from 'axios';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import AllBeers from './AllBeers';
-import Header from './Header';
-import EachBeer from './EachBeer';
 import RandomBeer from './RandomBeer';
-import Newbeer from './components/newbeer';
+import NewBeer from './NewBeer';
+import EachBeer from './EachBeer';
 
 class App extends Component {
+
   render() {
     return (
       <div>
-        <Header />
         <Switch>
-          <Route exact path="/" render={() => <Home />} />
-          <Route exact path="/all-beers" render={() => <AllBeers />} />
-          <Route exact path="/random-beers" render={() => <RandomBeer />} />
-          <Route exact path="/new-beer" render ={() => <Newbeer/>} />
-          <Route
-            exact
-            path="/beers/:id"
-            render={(props) => <EachBeer {...props} />}
-          />
+          <Route exact path = '/' render = { () => <Home />}/>
+          <Route exact path = '/All-beers' render = { () => <AllBeers />}/>
+          <Route exact path = '/Random-beer' render = { () => <RandomBeer />}/>
+          <Route exact path = '/New-beer' render = { () => <NewBeer />} />
+          <Route exact path = '/beers/:id'  render = { (props) => <EachBeer {...props} />}/>
         </Switch>
       </div>
     );

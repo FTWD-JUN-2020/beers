@@ -1,12 +1,12 @@
 import React from 'react';
-import '../App.css';
 
-const header = () => {
+const Header = props => {
     return (
         <div>
-            <h1 className ="header">⌂</h1>
+            
         </div>
     );
 };
 
-export default header;
+
+export default Header;
