@@ -21,8 +21,7 @@ class App extends Component {
           <Route exact path="/random-beers" render={() => <RandomBeer />} />
           <Route exact path="/new-beer" render ={() => <Newbeer/>} />
           <Route
-            exact
-            path="/beers/:id"
+            exact path="/beers/:id"
             render={(props) => <EachBeer {...props} />}
           />
         </Switch>
