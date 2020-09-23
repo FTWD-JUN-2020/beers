@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './App.css';
 import axios from 'axios';
 import React, { Component } from 'react';
@@ -25,3 +26,25 @@ class App extends Component {
 }
 
 export default App;
+=======
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+class Home extends Component {
+    render() {
+        return (
+            <div>
+                <Link to = '/' >Home</Link>
+                <br />
+                <Link to = 'All-beers' >All bears</Link>
+                <br />
+                <Link to = 'Random-beer' >Random beer</Link>
+                <br />
+                <Link to = 'New-beer' >New beer</Link>
+            </div>
+        );
+    }
+}
+
+export default Home;
+>>>>>>> 5f8fe67892df3f592eee0fea1d8dca6374ab72a5
